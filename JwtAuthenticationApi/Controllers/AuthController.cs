@@ -28,7 +28,7 @@ namespace JwtAuthenticationApi.Controllers
             if (ModelState.IsValid)
             {
                 var result = _userService.AddUserDetails(request);
-                return Ok(result);
+                return Ok("Registered Successfully");
             }
             else
             {
